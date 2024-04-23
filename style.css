@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 60%;
+    border: 3px solid white;
+    border-radius: 70px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url('image1.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-height:400px;
+}
+.nav-list{
+    width:70%;
+    display: flex;
+    align-items: center;
+    
+ }
+ .nav-list li{
+  list-style: none;
+  padding: 26px 30px;
+ }
+ .nav-list li a{
+   text-decoration: none;
+   color: white;
+ }
+ .nav-list li a:hover{
+     text-decoration: none;
+     color: blue;
+ }
+ .rightNav{
+     text-align: right;
+     width: 30%;
+     padding: 0 23px;
+ }
+ #Search{
+     padding:5px;
+     font-size: 17px;
+     border:2px solid grey;
+     border-radius: 9px;
+ }
+ .firstSection{
+     height: 100vh;
+ }
+ .box-main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     max-width: 50%;
+     margin: auto;
+     height: 80%;
+ }
+ .firstHalf{
+     width: 80%;
+     display: flex;
+     flex-direction:column ;
+     justify-content: center;
+ }
+ .secondHalf{
+     width:30% ;
+ }
+ .secondHalf img{
+     width: 200%;
+     border: 2px solid black;
+     border-radius: 400px;
+     display: block;
+     margin: auto;
+ }
+ .text-big{
+     font-size: 40px;
+ }
+
+ .section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .sectionTag{
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    flex-direction: row;
+    color: blue;
+ }
+ .sectionSubTag{
+    text-align: center;
+    justify-content: center;
+    padding: 70px;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .background1{
+    background: rgba(0, 0, 0, 0.6) url('image2.00.avif');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-blend-mode: darken;
+    
+ }
+ .contact{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('image5.0.avif');
+    background-size: cover;
+    color: white;
+ }
+   .content{
+    max-width: 800px;
+    text-align: center;
+ }
+    .content h2{
+    font-size: 45px;
+    font-weight: 500;
+ }
+ .content p{
+    font-weight: 300;
+    font-size: 20px;
+    padding: 40px;
+ }
+ .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 30px;
+ }
+ .contactInfo{
+    padding: 50px;
+ }
+ .form{
+    max-width: 62%
+    margin: 42px auto;
+ }
+ .form input{
+    margin: 15px 0;
+    padding: 3px 4px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+ }
+   .burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+   }
+   .line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+   }
+   @media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #Search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        padding: 5px 0px;
+    }
+    
+    }
+ 
